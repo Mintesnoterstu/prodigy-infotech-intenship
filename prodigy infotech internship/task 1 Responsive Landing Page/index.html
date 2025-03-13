@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Navigation Menu</title>
+    <title>Modern Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav id="navbar">
-        <div class="logo">Logo</div>
+        <div class="logo">Prodigy</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -17,23 +19,87 @@
         </ul>
     </nav>
 
-    <!-- Add some content to enable scrolling -->
     <div class="content">
         <section id="home">
-            <h1>Home Section</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>Welcome to Prodigy</h1>
+            <p>Transforming ideas into digital reality. We create innovative solutions that drive success.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Get Started</a>
+                <a href="#services" class="btn secondary">Learn More</a>
+            </div>
         </section>
+
         <section id="about">
-            <h1>About Section</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>About Us</h1>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Innovation</h3>
+                    <p>Pushing boundaries with cutting-edge solutions.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Team</h3>
+                    <p>Expert professionals dedicated to your success.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Growth</h3>
+                    <p>Helping businesses scale and achieve their goals.</p>
+                </div>
+            </div>
         </section>
+
         <section id="services">
-            <h1>Services Section</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>Our Services</h1>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful and intuitive user interfaces that engage.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable and secure cloud infrastructure services.</p>
+                </div>
+            </div>
         </section>
+
         <section id="contact">
-            <h1>Contact Section</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>Get in Touch</h1>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@prodigy.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Innovation Street, Tech City</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
         </section>
     </div>
 

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    width: 90%;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #2d3748;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.display {
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    font-weight: bold;
+    margin: 1.5rem 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #2d3748;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    word-break: break-all;
+    padding: 0 1rem;
+}
+
+.controls {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#pauseBtn {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee0000 100%);
+}
+
+#resetBtn {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+.laps {
+    margin-top: 2rem;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0 1rem;
+    border-radius: 10px;
+    background-color: rgba(247, 250, 252, 0.8);
+}
+
+.laps h2 {
+    margin-bottom: 1rem;
+    color: #2d3748;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#lapList {
+    list-style: none;
+}
+
+#lapList li {
+    padding: 0.8rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+#lapList li:hover {
+    background-color: rgba(237, 242, 247, 0.8);
+}
+
+/* Custom scrollbar */
+.laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+.laps::-webkit-scrollbar-track {
+    background: #f7fafc;
+    border-radius: 10px;
+}
+
+.laps::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 10px;
+}
+
+.laps::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+} 
