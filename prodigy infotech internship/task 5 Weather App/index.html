@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="search-input">
+            <button id="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+            <button id="location-button">
+                <i class="fas fa-location-dot"></i>
+            </button>
+        </div>
+        
+        <div class="weather-box">
+            <div class="weather-info">
+                <img src="" alt="weather icon" class="weather-icon">
+                <h2 class="temperature"></h2>
+                <h3 class="description"></h3>
+                <h3 class="city"></h3>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fas fa-water"></i>
+                    <div class="text">
+                        <span></span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fas fa-wind"></i>
+                    <div class="text">
+                        <span></span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="not-found">
+            <img src="https://raw.githubusercontent.com/CodeWithSaadi/weather-app/master/images/404.png">
+            <p>Oops! Invalid location!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
