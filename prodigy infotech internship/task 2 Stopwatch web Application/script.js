@@ -42,17 +42,27 @@ class Stopwatch {
         }
     }
 
-    reset() {
+   reset() {
+        // Stop any ongoing measurement
         this.running = false;
         clearInterval(this.intervalId);
+        
+        // Reset all time-related variables
+        this.startTime = 0;
         this.elapsedTime = 0;
-        this.updateDisplay();
+        
+        // Reset display to initial state
+        this.display.textContent = "00:00:00";
+        
+        // Clear lap history
         this.lapList.innerHTML = '';
         this.lapCount = 1;
+        
+        // Reset button states for new measurement
         this.startBtn.disabled = false;
-        this.pauseBtn.disabled = false;
+        this.pauseBtn.disabled = true;
+        this.lapBtn.disabled = false;
     }
-
     lap() {
         if (this.running) {
             const lapTime = this.formatTime(this.elapsedTime);
